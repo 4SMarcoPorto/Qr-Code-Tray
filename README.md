@@ -6,6 +6,8 @@
 
 ## 📖 Description
 
+<br>
+
 Qr Code Tray is a small tool to convert text to qr code. Is designed to work from your computer task bar tray. Very usefull, for example, to open websites from your computer on your smartphone on the fly.
 
 Some usefull examples:
@@ -16,6 +18,8 @@ Some usefull examples:
 
 #### Check out my [Figma Design](https://www.figma.com/file/xULeHVzJzLYLek3QFFqeH2/QrCodeTool-Tray---Github-Linked?node-id=0%3A1)
 
+<br>
+<br>
 
 ### 🚀 Technologies or languages used to power this awesome project up
 
@@ -25,6 +29,10 @@ Some usefull examples:
 
 * [Node Js](https://github.com/nodejs)
 
+<br>
+<br>
+<br>
+<br>
 
 ## ⚙ Setup and Usage
 
@@ -40,6 +48,10 @@ And finally start your project using:
 
 ``` npm start ```
 
+<br>
+<br>
+<br>
+<br>
 
 ## 🚨 Disclaimer
 
