@@ -1,12 +1,18 @@
-# Qr Code Tray
+# Qr Code Tray 
 
 ![Main ScreenShot](/README.assets/screenshot.png)
 
 
 
-## Description
+## 📖 Description
 
 Qr Code Tray is a small tool to convert text to qr code. Is designed to work from your computer task bar tray. Very usefull, for example, to open websites from your computer on your smartphone on the fly.
+
+Some usefull examples:
+
+* Open your localhost on mobile devices and check your media queries;
+* Open certain websites on your smartphone on the fly;
+* Many other examples that i'm not remembering 😁
 
 #### Check out my [Figma Design](https://www.figma.com/file/xULeHVzJzLYLek3QFFqeH2/QrCodeTool-Tray---Github-Linked?node-id=0%3A1)
 
@@ -20,7 +26,7 @@ To build this project, i am using:
 * [Electron-tray-window](https://github.com/sfatihk/electron-tray-window)
 
 
-## Setup and Usage
+## ⚙ Setup and Usage
 
 To start coding this project you must have clone this repo to a folder of your choice:
 
@@ -35,7 +41,7 @@ And finally start your project using:
 ``` npm start ```
 
 
-## Disclaimer
+## 🚨 Disclaimer
 
 >You can use this project for anything you are developing, feel free to change, improve all aspects of this project.
 
