@@ -32,7 +32,7 @@ Some usefull examples:
 <br>
 <br>
 
-### 🚀 Functionalities
+### 🧪 Functionalities
 
 * Convert all kinda of text into a QR Code, ⬆ Up to 250 characters;
 
