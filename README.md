@@ -17,13 +17,13 @@ Some usefull examples:
 #### Check out my [Figma Design](https://www.figma.com/file/xULeHVzJzLYLek3QFFqeH2/QrCodeTool-Tray---Github-Linked?node-id=0%3A1)
 
 
-## Technologies and languages used
-
-To build this project, i am using:
+### 🚀 Technologies or languages used to power this awesome project up
 
 * [Electron](https://github.com/electron/electron)
 
 * [Electron-tray-window](https://github.com/sfatihk/electron-tray-window)
+
+* [Node Js](https://github.com/nodejs)
 
 
 ## ⚙ Setup and Usage
