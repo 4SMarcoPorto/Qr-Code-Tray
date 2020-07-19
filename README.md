@@ -10,3 +10,17 @@ Qr Code Tray is a small tool to convert text to qr code. Is designed to work fro
 
 #### Check out my [Figma Design](https://www.figma.com/file/xULeHVzJzLYLek3QFFqeH2/QrCodeTool-Tray---Github-Linked?node-id=0%3A1)
 
+
+## Setup and Usage
+
+To start coding this project you must have clone this repo to a folder of your choice:
+
+``` git clone https://github.com/4SMarcoPorto/Qr-Code-Tray.git your-folder-name ```
+
+Then you need to install all node dependencies, so execute this command inside your cloned folder:
+
+``` npm install ```
+
+And finally start your project using:
+
+``` npm start ```
