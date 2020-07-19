@@ -14,7 +14,7 @@ Some usefull examples:
 
 * Open your localhost on mobile devices and check your media queries;
 * Open certain websites on your smartphone on the fly;
-* Many other examples that i'm not remembering 😁
+* Many other examples that i'm not remembering 😁.
 
 #### Check out my [Figma Design](https://www.figma.com/file/xULeHVzJzLYLek3QFFqeH2/QrCodeTool-Tray---Github-Linked?node-id=0%3A1)
 
@@ -28,6 +28,18 @@ Some usefull examples:
 * [Electron-tray-window](https://github.com/sfatihk/electron-tray-window)
 
 * [Node Js](https://github.com/nodejs)
+
+<br>
+<br>
+
+### 🚀 Functionalities
+
+* Convert all kinda of text into a QR Code, ⬆ Up to 250 characters;
+
+* Available from your computer tray;
+
+* Drag and drop the generated QR Code into your workplace or any folder.
+
 
 <br>
 <br>
@@ -57,4 +69,4 @@ And finally start your project using:
 
 >You can use this project for anything you are developing, feel free to change, improve all aspects of this project.
 
->I will try to update this repository and introduce new content and features
+>I will try to update this repository and introduce new content and features.
