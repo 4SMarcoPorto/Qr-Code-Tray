@@ -1,4 +1,4 @@
-# Qr Code Tray 
+# Qr Code Tray !
 
 ![Main ScreenShot](/README.assets/screenshot.png)
 
