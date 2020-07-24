@@ -16,6 +16,6 @@ ipc.on('QrCode200', (event,args) => {
 });
 
 iframe_qrcode.addEventListener('load', () => {
-    iframe_qrcode.style.height = iframe_qrcode.contentWindow.document.body.scrollHeight + 50 + 'px';
+    iframe_qrcode.style.height = iframe_qrcode.contentWindow.document.body.scrollHeight + 20 + 'px';
     ipc.send('iframeReloadSize',iframe_qrcode.style.height)
 });
