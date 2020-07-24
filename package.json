@@ -1,11 +1,12 @@
 {
   "name": "qrcodetray",
   "version": "1.0.0",
-  "description": "",
+  "description": "An app to convert text or links into a qrcode",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "electron-pack": "electron-builder -c.extraMetadata.main=index.js"
   },
   "author": "4SMarcoPorto",
   "dependencies": {
@@ -13,6 +14,23 @@
     "qrcode": "^1.4.4"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0"
-  }
+    "concurrently": "^5.2.0",
+    "electron-builder": "^22.6.1"
+  },
+  "homepage": "./",
+  "build": {
+    "appId": "com.example.QRCodeTray",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.png"
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps"
 }

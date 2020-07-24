@@ -50,7 +50,7 @@ Some usefull examples:
 
 To start coding this project you must have clone this repo to a folder of your choice:
 
-``` git clone https://github.com/4SMarcoPorto/Qr-Code-Tray.git your-folder-name ```
+``` git clone https://gi    thub.com/4SMarcoPorto/Qr-Code-Tray.git your-folder-name ```
 
 Then you need to install all node dependencies, so execute this command inside your cloned folder:
 

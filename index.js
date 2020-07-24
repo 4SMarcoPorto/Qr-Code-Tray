@@ -7,8 +7,6 @@ const { app } = require("electron");
 
 //render tray
 app.on("ready", () => {
-
-
   TrayWindow.setOptions({
     trayIconPath: path.join("resources/assets/images/icon.png"),
     windowUrl: `file://${path.join(__dirname, "resources/view.html")}`,
