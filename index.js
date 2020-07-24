@@ -16,7 +16,7 @@ app.on("ready", () => {
     margin_y : 30
   });
 });
-
+console.log('asd')
 //Generate qrcode from string provide by ipc
 async function QrCodeGenerator(string) {
   const qrCodePath = "./resources/view-engine/qr.png"
