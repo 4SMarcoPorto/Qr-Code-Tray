@@ -1,0 +1,68 @@
+/*
+? Dark theme
+
+Index
+  1.view.html
+    1.1 - body
+    1.2 - header component
+    1.3 - container (textarea and iframe area)
+    1.4 - footer
+
+  3.scroll bar
+*/
+
+/*===========================================================*/
+
+/*1 - view.html*/
+  /*1.1*/
+  body {
+    background: #1C1C1C;
+  }
+
+
+/*1.2*/
+  .header-tray {
+    border-bottom: 0.5px solid #525152;
+  }
+
+  .header-tray>p {
+    color:#fff;
+  }
+
+/*1.3*/
+  textarea {
+    border: 0.5px solid #525152;
+    color: #fff;
+  }
+
+  textarea::placeholder {
+    color: #525152;
+  }
+
+
+  /*1.4*/
+  .footer-tray {
+    border-top: 0.5px solid #525152;
+
+  }
+
+  .footer-tray>p {
+    color: #525152;
+  }
+
+  
+/*3 - scroll bar*/
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #525152;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius:20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }

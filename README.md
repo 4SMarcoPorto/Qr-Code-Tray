@@ -21,7 +21,7 @@ Some usefull examples:
 <br>
 <br>
 
-### 🚀 Technologies or languages used to power this awesome project up
+### 🚀 Technologies used to power this awesome project up
 
 * [Electron](https://github.com/electron/electron)
 
