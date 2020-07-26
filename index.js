@@ -6,6 +6,7 @@ const TrayWindow = require("electron-tray-window");
 const { app } = require("electron");
 
 
+
 //render tray
 app.on("ready", () => {
   TrayWindow.setOptions({
@@ -20,7 +21,7 @@ app.on("ready", () => {
 
 //Generate qrcode from string provide by ipc
 async function QrCodeGenerator(string) {
-  const qrCodePath = "./resources/view-engine/Qrcode.png"
+  const qrCodePath = path.join("resources/view-engine/Qrcode.png")
   qrcode.toFile(qrCodePath, string, {
     color: {
       dark: '#C3C6C8ff',
@@ -47,10 +48,12 @@ ipc.on('iframeReloadSize', (event,args) =>{
 })
 
 ipc.on('ThemeMode', (event,args) =>{
-  console.log('[ThemeMode] ---- ',"\x1b[36m " + args + "\x1b[0m")
-  thememode = args
-  QrCodeGenerator(thememode.toUpperCase() + ' mode is enable!').catch(error => console.error(error.stack));
-  event.sender.send('QrCode200',true)
+  if(args !== null){
+    console.log('[ThemeMode] ---- ',"\x1b[36m " + args + "\x1b[0m")
+    thememode = args
+    QrCodeGenerator(thememode.toUpperCase() + ' mode is enable!').catch(error => console.error(error.stack));
+    event.sender.send('QrCode200',true)
+  }
 })
 
 
