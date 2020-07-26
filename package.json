@@ -11,7 +11,8 @@
   "author": "4SMarcoPorto",
   "dependencies": {
     "electron-tray-window": "^1.2.5",
-    "qrcode": "^1.4.4"
+    "qrcode": "^1.4.4",
+    "update-electron-app": "^1.5.0"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",

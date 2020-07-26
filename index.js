@@ -1,10 +1,11 @@
+require('update-electron-app')()
+
 const ipc = require('electron').ipcMain;
 const qrcode  = require("qrcode");
 const path = require("path");
 
 const TrayWindow = require("electron-tray-window");
-const { app } = require("electron");
-
+const { app  } = require("electron");
 
 
 //render tray
