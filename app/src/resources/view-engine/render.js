@@ -28,12 +28,12 @@ const themeSwitcher = document.querySelector("#themeSwitcher");
 const themeprovider = document.querySelector("#themeprovider");
 
 if (localStorage.thememode == null) {
-  themeprovider.href = "assets/css/theme-light.css";
-  themeSwitcher.src = "assets/images/dark.svg";
+  themeprovider.href = "./assets/css/theme-light.css";
+  themeSwitcher.src = "./assets/images/dark.svg";
 } else {
-  themeprovider.href = "assets/css/theme-" + localStorage.thememode + ".css";
+  themeprovider.href = "./assets/css/theme-" + localStorage.thememode + ".css";
   themeSwitcher.src =
-    "assets/images/" +
+    "./assets/images/" +
     (localStorage.thememode == "light" ? "dark" : "light") +
     ".svg";
 }
@@ -45,9 +45,9 @@ themeSwitcher.addEventListener("click", () => {
     "thememode",
     localStorage.thememode == "light" ? "dark" : "light"
   );
-  themeprovider.href = "assets/css/theme-" + localStorage.thememode + ".css";
+  themeprovider.href = "./assets/css/theme-" + localStorage.thememode + ".css";
   themeSwitcher.src =
-    "assets/images/" +
+    "./assets/images/" +
     (localStorage.thememode == "light" ? "dark" : "light") +
     ".svg";
 
