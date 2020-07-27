@@ -13,6 +13,8 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 
 
 
+
+
 //render tray
 app.on("ready", () => {
   TrayWindow.setOptions({
@@ -64,7 +66,6 @@ ipc.on('ThemeMode', (event,args) =>{
     event.sender.send('QrCode200',true)
   }
 })
-
 
 
 
