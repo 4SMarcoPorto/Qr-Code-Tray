@@ -6,22 +6,28 @@ const qrcode  = require("qrcode");
 
 const TrayWindow = require("electron-tray-window");
 
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit();
 }
 
-
-
-
-
 //render tray
-app.on("ready", () => {
+app.on("ready", () => {  
+  const win = new BrowserWindow({
+    width: 300,
+    height: 350,
+    webPreferences: {
+      nodeIntegration: true
+    },
+    frame: false 
+  })
+
+  win.loadFile(`${path.join(__dirname, "resources/view.html")}`)
+
   TrayWindow.setOptions({
     trayIconPath: path.join(__dirname,"resources/assets/images/icon.png"),
-    windowUrl: `file://${path.join(__dirname, "resources/view.html")}`,
-    width:300,
-    height:350,
+    window: win,
     margin_x : -100, 
     margin_y : 30
   });
@@ -30,10 +36,10 @@ app.on("ready", () => {
 
 //Generate qrcode from string provide by ipc
 async function QrCodeGenerator(string) {
-  const qrCodePath = path.join("resources/view-engine/Qrcode.png")
+  const qrCodePath = path.join(__dirname,"resources/view-engine/Qrcode.png")
   qrcode.toFile(qrCodePath, string, {
     color: {
-      dark: '#C3C6C8ff',
+      dark: '#64686Aff',
       light: (thememode == 'light') ? '#ffffffff' : '#1C1C1Cff'
     }
   }, function (err) {
@@ -67,23 +73,10 @@ ipc.on('ThemeMode', (event,args) =>{
   }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Detect IPC for quit app when user press btn close app
+ipc.on('QuitApp', (event,args) =>{
+  if(args) app.exit(0)
+})
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
@@ -93,14 +86,3 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
-app.on('activate', () => {
-  // On OS X it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
-  if (BrowserWindow.getAllWindows().length === 0) {
-    createWindow();
-  }
-});
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.

@@ -59,7 +59,7 @@ Index
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 25%;
     
   }
 
@@ -84,10 +84,14 @@ Index
   .footer-tray {
     position: relative;
     width: 300px;
-    height: 45px;
+    height: auto;
     left: -10px;
     bottom: 0px;
     text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    align-content: space-around;
   }
 
   .footer-tray>p {
@@ -95,9 +99,14 @@ Index
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    line-height: 30px;
     cursor: pointer;
+    padding: 20px 0px 0px 0px;
   }
+
+  .footer-tray > #quit {
+    color:#FF1414
+  }
+
 
 
 /*2 - iframe*/

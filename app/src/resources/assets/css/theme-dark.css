@@ -21,10 +21,6 @@ Index
 
 
 /*1.2*/
-  .header-tray {
-    border-bottom: 0.5px solid #525152;
-  }
-
   .header-tray>p {
     color:#fff;
   }
@@ -41,13 +37,9 @@ Index
 
 
   /*1.4*/
-  .footer-tray {
-    border-top: 0.5px solid #525152;
-
-  }
-
   .footer-tray>p {
     color: #525152;
+    border-top: 0.5px solid #525152;
   }
 
   

@@ -30,6 +30,7 @@ const themeprovider = document.querySelector("#themeprovider");
 if (localStorage.thememode == null) {
   themeprovider.href = "./assets/css/theme-light.css";
   themeSwitcher.src = "./assets/images/dark.svg";
+  localStorage.setItem("thememode", "light");
 } else {
   themeprovider.href = "./assets/css/theme-" + localStorage.thememode + ".css";
   themeSwitcher.src =
@@ -58,8 +59,16 @@ themeSwitcher.addEventListener("click", () => {
 const btncopy = document.querySelector("#copy");
 btncopy.addEventListener("click", () => {
   clipboard.writeImage(
-    nativeImage.createFromPath(path.join("resources/view-engine/Qrcode.png"))
+    nativeImage.createFromPath(path.join(__dirname,"/view-engine/Qrcode.png"))
   );
-  btncopy.innerHTML  = 'Copied'
-  setTimeout(() => {btncopy.innerHTML  = 'Copy to clipboard'}, 500);
+  btncopy.innerHTML = "Copied";
+  setTimeout(() => {
+    btncopy.innerHTML = "Copy to clipboard";
+  }, 500);
 });
+
+//Quit app on click "close app"
+const btnquit = document.querySelector("#quit");
+btnquit.addEventListener("click", () => {
+  ipc.send("QuitApp", true);
+});   
