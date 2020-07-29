@@ -25,7 +25,7 @@ Some useful examples:
 
 * [Electron-tray-window](https://github.com/sfatihk/electron-tray-window)
 
-* [Node Js](https://github.com/nodejs)
+* [Node.js](https://github.com/nodejs)
 
 <br>
 <br>
