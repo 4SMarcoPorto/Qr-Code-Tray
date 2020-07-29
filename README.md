@@ -1,20 +1,18 @@
-# Qr Code Tray !
+# Qr Code Tray!
 
 ![Main ScreenShot](/README.assets/screenshot.png)
-
-
 
 ## 📖 Description
 
 <br>
 
-Qr Code Tray is a small tool to convert text to qr code. Is designed to work from your computer task bar tray. Very usefull, for example, to open websites from your computer on your smartphone on the fly.
+Qr Code Tray is a small tool to convert text to QR code. Is designed to work from your computer taskbar tray. Very useful, for example, to open websites from your computer on your smartphone on the fly.
 
-Some usefull examples:
+Some useful examples:
 
 * Open your localhost on mobile devices and check your media queries;
 * Open certain websites on your smartphone on the fly;
-* Many other examples that i'm not remembering 😁.
+* Many other examples that I'm not remembering 😁.
 
 #### Check out my [Figma Design](https://www.figma.com/file/xULeHVzJzLYLek3QFFqeH2/QrCodeTool-Tray---Github-Linked?node-id=0%3A1)
 
@@ -34,7 +32,7 @@ Some usefull examples:
 
 ### 🧪 Functionalities
 
-* Convert all kinda of text into a QR Code, ⬆ Up to 250 characters;
+* Convert all kind of text into a QR Code, ⬆ Up to 250 characters;
 
 * Available from your computer tray;
 
@@ -48,15 +46,15 @@ Some usefull examples:
 
 ## ⚙ Setup and Usage
 
-To start coding this project you must have clone this repo to a folder of your choice:
+To start coding this project you must have cloned this repo to a folder of your choice:
 
-``` git clone https://gi    thub.com/4SMarcoPorto/Qr-Code-Tray.git your-folder-name ```
+``` git clone https://github.com/4SMarcoPorto/Qr-Code-Tray.git your-folder-name ```
 
 Then you need to install all node dependencies, so execute this command inside your cloned folder:
 
 ``` npm install ```
 
-And finally start your project using:
+And finally, start your project using:
 
 ``` npm start ```
 
