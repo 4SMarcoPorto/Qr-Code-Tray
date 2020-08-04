@@ -12,6 +12,7 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
   app.quit();
 }
 
+
 //render tray
 app.on("ready", () => {  
   const win = new BrowserWindow({
