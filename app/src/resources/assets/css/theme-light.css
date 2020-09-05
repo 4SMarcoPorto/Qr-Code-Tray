@@ -1,0 +1,53 @@
+/*
+? Light theme
+
+Index
+  1.view.html
+    1.1 - body
+    1.2 - header component
+    1.3 - container (textarea and iframe area)
+    1.4 - footer
+  3.scroll bar
+*/
+
+/*===========================================================*/
+
+/*1 - view.html*/
+  /*1.1*/
+  body {
+    background: #FFFFFF;
+  }
+
+/*1.3*/
+  textarea {
+    border: 0.5px solid #E5E5E5;
+    color: #000;
+  }
+
+  textarea::placeholder {
+    color: #E5E5E5;
+  }
+
+
+  /*1.4*/
+  .footer-tray>p {
+    color: #525152;
+    border-top: 0.5px solid #E5E5E5;
+  }
+
+ 
+/*3 - scroll bar*/
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #DADADE;
+  border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

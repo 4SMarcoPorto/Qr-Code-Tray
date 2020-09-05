@@ -2,17 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/structure.css">
+    <link rel="stylesheet" type="text/css" id="themeprovider">
   </head>
+  
+
   <body>
     <div class="header-tray">
       <p>QR Code Generator</p>
+      <img id="themeSwitcher">
     </div>
     <div class="container-center">
       <textarea placeholder="Enter your content here" rows="2" cols="40" id="input" maxlength="250"></textarea>
       <iframe src="./view-engine/iframe-qrcode.html" id="iframeqrcode" scrolling="no"></iframe>
     </div>
+    <div class="footer-tray">
+      <p id="copy">Copy to clipboard</p>
+      <p id="quit">Close App</p>
+    </div>
     <script src="./view-engine/render.js"></script>
   </body>
-
 </html>
